@@ -1,0 +1,304 @@
+* {
+	box-sizing:border-box;
+	border:0;
+	margin:0;
+	padding:0;
+}
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    background-color: white;
+    color: #333;
+    font-family: "Roboto",UILanguageFont,Arial,sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.4;
+    text-rendering: optimizeLegibility;
+    z-index: -1;
+}
+.header {
+    height: 60px;
+    width: 100%;
+    background: #f1f1f1;
+    position: static;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.logo {
+    width: 1160px;
+    height: 60px;
+    position: relative;
+    margin: 0 auto;
+    background-image: url('../images/play_prism.png');
+    background-size: 188px 40px;
+    background-repeat: no-repeat;
+    background-position: 30px 10px;
+    cursor: pointer;
+}
+.wrapper {
+    background-color: #eeeeee;
+    position: relative;
+    width: 1160px;
+    margin: 0 auto;
+}
+.nav {
+    -webkit-box-shadow: 0 3px 5px rgba(0,0,0,0.15);
+    box-shadow: 0 3px 5px rgba(0,0,0,0.15);
+    background: white;
+    height: 48px;
+    width: 100%;
+    position: relative;
+    overflow: visible;
+}
+.categorie {
+    list-style:none;
+    left: 0;
+    display: block;
+    top: 0;
+    position: absolute;
+    height: 144px;
+    width: 250px!important;
+    background: rgba(245,245,245,0.95);
+    -webkit-box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+}
+.categorie-item {
+    position: relative;
+    z-index: 1053;
+    line-height: normal;
+    padding: 0;
+    display: block;
+    height: 48px;
+    overflow: hidden;
+    text-decoration: none;
+    width: 250px!important;
+    color: #333;
+    cursor: pointer;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+.categorie-item > .icon {
+	float:left;
+    display: block;
+    height: 48px;
+    width: 90px;
+    background-repeat: no-repeat;
+    background-position: 48px 12px;
+}
+.categorie-item > .title {
+	float:left;
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;
+    line-height: 48px;
+    vertical-align: middle;
+    width: 160px;
+    height: 48px;
+    text-align: left;
+	padding-left:16px;
+    color: #555;
+}
+.categorie-item.apps > .icon {
+    background-color: #689f38;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAxElEQVR4Ae3SgQbCUBSA4TtNC/Y8gQE0ND1D7zGGYLDHyHqXEg0QG01AqAECbj8qcNLdXKns5wOOc2qb+qm01kOToR3GHZaHOJgMxljDabF8hBKxybCHEnM4CLHEBmdcsMUKMwywQAnP9BdFOGGPdx1xxbTN80zRttR0eYauZQZfwrMEPhLIyTOTV8td1HjkK7ovkJNnarjyiyUL/4B0JB3IYatcOlDAVoV0oIGtGvXxtOW+80B/oIKtKulAYOlIhUD9TTeTUvGiZ9uMzgAAAABJRU5ErkJggg==);
+}
+.categorie-item.films > .icon  {
+    background-color: #ed3b3b;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYAQAAAADIDABVAAAAAnRSTlMAAHaTzTgAAAAZSURBVHgBY0AH9v//wLHx/zMgTAwfjtEAAGBCIjmpILE8AAAAAElFTkSuQmCC);
+}
+.categorie-item.livres > .icon  {
+    background-color: #039be5;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAQklEQVR4AWMYfuA/AYBH/SMg9qSRBQhLaGkBQn7UAiDVAMI0sQBiOIJNoQWEwagFoxaMWjBqAengEa0sQFSZww4AAFuAn7nmsWNfAAAAAElFTkSuQmCC);
+}
+.categorie-item.apps.over > .title,
+.categorie-item.apps.selection-categorie > .title {
+    color: white;
+    background-color: #689f38;
+}
+.categorie-item.films.over > .title,
+.categorie-item.films.selection-categorie > .title  {
+    color: white;
+    background-color: #ed3b3b;
+}
+.categorie-item.livres.over > .title,
+.categorie-item.livres.selection-categorie > .title  {
+    color: white;
+    background-color: #039be5;
+}
+.sous-categorie {
+    list-style: none;
+    margin-left: 303px;
+    position: relative;
+    height: 48px;
+}
+.sous-categorie-item {
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-color: transparent;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 18px;
+    height: 48px;
+    line-height: 48px;
+    text-decoration: none;
+    width: 235px;
+    text-align: center;
+}
+.sous-categorie-item.apps.selection-sous-categorie,
+.sous-categorie-item.apps.over {
+    color: #689f38;
+    border-color: #689f38;
+}
+.sous-categorie-item.films.selection-sous-categorie,
+.sous-categorie-item.films.over {
+    color: #ed3b3b;
+    border-color: #ed3b3b;
+}
+.sous-categorie-item.livres.selection-sous-categorie,
+.sous-categorie-item.livres.over {
+    color: #039be5;
+    border-color: #039be5;
+}
+.content {
+    margin-left: 250px;
+    padding: 30px 50px;
+}
+.carrousel {
+    position: relative;
+    height: 455px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.arrow {
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 455px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0,0,0,0.4);
+    opacity: .8;
+    cursor: pointer;
+    transition: background-color 200ms ease-out 0ms,opacity 80ms ease-out 0ms,transform 80ms ease-out 0ms;
+    -webkit-transition: background-color 200ms ease-out 0ms,opacity 80ms ease-out 0ms,-webkit-transform 80ms ease-out 0ms;
+    -webkit-background-size: 40px;
+    background-size: 40px;
+}
+.arrow:hover {
+    background-color: rgba(0,0,0,0.8);
+    opacity: 1;
+}
+.arrow.left {
+    left:0;
+    background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABRBAMAAAC3Yzw7AAAAHlBMVEX///////////////////////////////////////8V2MxSAAAACnRSTlMAMGD/oFCwENDwA5I2/QAAAGFJREFUeAHtzDENgDAARNELC2s94IDfha0eMAAu2FFQxyQY4JIy3hPwFBG/KPJMVZ6F5oVQzRCaF8JqhjQzrAkTvnaAQ98ugK5v8w1sJWXKwbLLK7cir+yyXF4ozaciYsgDEq8yOcoKZN4AAAAASUVORK5CYII=);
+}
+.arrow.right {
+    right:0;
+    background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABRBAMAAAC3Yzw7AAAAHlBMVEX///////////////////////////////////////8V2MxSAAAACnRSTlMAMKD/YLBQ8NAQn5/bQQAAAGRJREFUeAHt07EJgDAUhGENOII4QEY4EcuAIzmFnSOH61P8kPb++vhe9Za5UkorHdbGdkUnBKXGQDHykRhZRMkaclzIzcMLDA8PP/CJr6T752DAgB5C0KcNItIgIgnodoMppek6laIx1dd10gYAAAAASUVORK5CYII=);
+}
+.carrousel img {
+    float: left;
+    width: 810px;
+    height: 455px;
+    border-image-width: 0;
+}
+.principal {
+    position: relative;
+    width: 100%;
+    height: 495px;
+}
+.details {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 75px;
+    padding: 5px;
+    font-style: normal;
+}
+.titre {
+    font-size: 28px;
+    font-weight: 100;
+}
+.sous-titre {
+    font-size: 16px;
+    font-weight: 300;
+}
+.contenant-produits {
+    position: relative;
+    width: 100%;
+    height: 410px;
+    background-color: white;
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px #666;
+    -moz-box-shadow: 5px 5px 5px #666;
+    -webkit-box-shadow: 5px 5px 5px rgba(102, 102, 102, 0.75);
+}
+.contenant-produits > div {
+    width: 160px;
+    height: 160px;
+    float: left;
+    margin: 20px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+}
+.produit {
+    cursor: pointer;
+    display: block;
+    max-width: 155px;
+    max-height: 160px;
+    margin: 0 auto;
+    box-shadow: 5px 5px 5px #666;
+    -moz-box-shadow: 5px 5px 5px #666;
+    -webkit-box-shadow: 5px 5px 5px rgba(102, 102, 102, 0.75);
+    border-radius: 10px;
+    border: 1px solid transparent;
+}
+body.apps .produit.over {
+    box-shadow: 0 0 20px 8px #689f38;
+}
+body.films .produit.over  {
+    box-shadow: 0 0 20px 8px #ed3b3b;
+}
+body.livres .produit.over  {
+    box-shadow: 0 0 20px 8px #039be5;
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    cursor: pointer;
+    display: none;
+    z-index: 9999;
+}
+body.apps .overlay {
+    background-color: rgba(104, 159, 56, 0.90);
+}
+body.films .overlay  {
+    background-color: rgba(237, 59, 59, 0.90);
+}
+body.livres .overlay  {
+    background-color: rgba(3, 155, 229, 0.90);
+}
+.overlay > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 512px;
+    height: 512px;
+    margin: -256px;
+}
+.overlay img {
+    display: block;
+    max-width:512px;
+    max-height:512px;
+    margin:0 auto;
+}

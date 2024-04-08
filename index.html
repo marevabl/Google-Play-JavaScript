@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf-8">
+
+        <title>TP 2</title>
+		
+		<link href="images/favicon.ico" rel="icon">
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i">
+        <link rel="stylesheet" href="css/styles.css"/>
+        
+        <script src="js/jquery/jquery.min.js"></script>
+        <script src="js/tests/script.js"></script>
+        <script src="js/tests/scriptTests.js"></script>
+		
+        <script src="js/script.js"></script>
+	</head>
+	<body class="mode-test">
+        <div class="header">
+            <div id="logo" class="logo">
+                <div class="logoImg"></div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="nav">
+                <ul class="categorie">
+                    <li class="categorie-item apps" data-categorie="apps">
+                        <span class="icon"></span>
+                        <span class="title">Applications</span>
+                    </li>
+                    <li class="categorie-item films" data-categorie="films">
+                        <span class="icon"></span>
+                        <span class="title">Films</span>
+                    </li>
+                    <li class="categorie-item livres" data-categorie="livres">
+                        <span class="icon"></span>
+                        <span class="title">Livres</span>
+                    </li>
+                </ul>
+                <ul class="sous-categorie">
+                    <li class="sous-categorie-item apps" data-sous-categorie="like" data-titre="Vous aimerez peut-être..." data-sous-titre="En fonction de vos récentes installations" style="display:none">Recommandations</li>
+                    <li class="sous-categorie-item apps" data-sous-categorie="wifi" data-titre="Pas de Wi-Fi? Pas de problème" data-sous-titre="Jeux hors ligne" style="display:none">Pas de Wi-Fi?</li>
+                    <li class="sous-categorie-item apps" data-sous-categorie="free" data-titre="Top Gratuits" data-sous-titre="Mis à jour quotidiennement" style="display:none">Top gratuits</li>
+                    <li class="sous-categorie-item films" data-sous-categorie="new" data-titre="Nouveautés &quot;Films&quot;" data-sous-titre="Tous les grands succès" style="display:none">Nouveautés</li>
+                    <li class="sous-categorie-item films" data-sous-categorie="remakes" data-titre="Reboots et remakes" data-sous-titre="Vos films favorits réinventés" style="display:none">Remakes</li>
+                    <li class="sous-categorie-item films" data-sous-categorie="pop" data-titre="Films populaires" data-sous-titre="Meilleures ventes et populaires" style="display:none">Populaires</li>
+                    <li class="sous-categorie-item livres" data-sous-categorie="pop" data-titre="Populaires sur Play" data-sous-titre="Pour les fervents de lecture" style="display:none">Populaires</li>
+                    <li class="sous-categorie-item livres" data-sous-categorie="deals" data-titre="Les aubaines les plus hot!" data-sous-titre="Faites vos réserves de bestsellers" style="display:none">Aubaines</li>
+                    <li class="sous-categorie-item livres" data-sous-categorie="screen" data-titre="Des pages à l'écran" data-sous-titre="Livres qui sont apparus au petit ou grand écran" style="display:none">À l'écran</li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="carrousel">
+                    <div class="arrow left">
+                    </div>
+                    <img id="photo" src="images/carrousel/img0.png" data-img-courante="0" />
+                    <div class="arrow right">
+                    </div>
+                </div>
+                <div id="main" class="principal" style="opacity:0;">
+                    <div class="details">
+                        <div class="titre"></div>
+                        <div class="sous-titre"></div>
+                    </div>
+                    <div class="contenant-produits">
+                        <div><img class="produit" src="images/apps/like/img0.png" /></div>
+                        <div><img class="produit" src="images/apps/like/img1.png" /></div>
+                        <div><img class="produit" src="images/apps/like/img2.png" /></div>
+                        <div><img class="produit" src="images/apps/like/img3.png" /></div>
+                        <div><img class="produit" src="images/apps/like/img4.png" /></div>
+                        <div><img class="produit" src="images/apps/like/img5.png" /></div>
+                        <div><img class="produit" src="images/apps/like/img6.png" /></div>
+                        <div><img class="produit" src="images/apps/like/img7.png" /></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="overlay" class="overlay">
+            <div>
+                <img id="zoom" src="" />
+            </div>
+        </div>
+    </body>
+</html>
